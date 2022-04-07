@@ -1,23 +1,21 @@
-import React from 'react'
 import "./sidebar.css";
-
 import {
-  MdLineStyle,
-  MdTimeline,
-  MdTrendingUp,
-  MdPermIdentity,
-  MdStorefront,
-  MdAttachMoney,
-  MdBarChart,
-  MdMailOutline,
-  MdDynamicFeed,
-  MdChatBubbleOutline,
-  MdWorkOutline, MdReportProblem
-} from "react-icons/md";
-import { BrowserRouter as Link } from "react-router-dom";
+  LineStyle,
+  Timeline,
+  TrendingUp,
+  PermIdentity,
+  Storefront,
+  AttachMoney,
+  BarChart,
+  MailOutline,
+  DynamicFeed,
+  ChatBubbleOutline,
+  WorkOutline,
+  Report,
+} from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
-
-const Sidebar = () => {
+export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -25,17 +23,17 @@ const Sidebar = () => {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-              <li className="sidebarListItem active">
-                <MdLineStyle className="sidebarIcon" />
-                Home
-              </li>
+            <li className="sidebarListItem active">
+              <LineStyle className="sidebarIcon" />
+              Home
+            </li>
             </Link>
             <li className="sidebarListItem">
-              <MdTimeline className="sidebarIcon" />
+              <Timeline className="sidebarIcon" />
               Analytics
             </li>
             <li className="sidebarListItem">
-              <MdTrendingUp className="sidebarIcon" />
+              <TrendingUp className="sidebarIcon" />
               Sales
             </li>
           </ul>
@@ -45,22 +43,22 @@ const Sidebar = () => {
           <ul className="sidebarList">
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <MdPermIdentity className="sidebarIcon" />
+                <PermIdentity className="sidebarIcon" />
                 Users
               </li>
             </Link>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
-                <MdStorefront className="sidebarIcon" />
+                <Storefront className="sidebarIcon" />
                 Products
               </li>
             </Link>
             <li className="sidebarListItem">
-              <MdAttachMoney className="sidebarIcon" />
+              <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
             <li className="sidebarListItem">
-              <MdBarChart className="sidebarIcon" />
+              <BarChart className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -69,15 +67,15 @@ const Sidebar = () => {
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <MdMailOutline className="sidebarIcon" />
+              <MailOutline className="sidebarIcon" />
               Mail
             </li>
             <li className="sidebarListItem">
-              <MdDynamicFeed className="sidebarIcon" />
+              <DynamicFeed className="sidebarIcon" />
               Feedback
             </li>
             <li className="sidebarListItem">
-              <MdChatBubbleOutline className="sidebarIcon" />
+              <ChatBubbleOutline className="sidebarIcon" />
               Messages
             </li>
           </ul>
@@ -86,22 +84,20 @@ const Sidebar = () => {
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <MdWorkOutline className="sidebarIcon" />
+              <WorkOutline className="sidebarIcon" />
               Manage
             </li>
             <li className="sidebarListItem">
-              <MdTimeline className="sidebarIcon" />
+              <Timeline className="sidebarIcon" />
               Analytics
             </li>
             <li className="sidebarListItem">
-              <MdReportProblem className="sidebarIcon" />
+              <Report className="sidebarIcon" />
               Reports
             </li>
           </ul>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default Sidebar
