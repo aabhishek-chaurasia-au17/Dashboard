@@ -1,5 +1,4 @@
 import React from 'react'
-
 import "./sidebar.css";
 
 import {
@@ -15,6 +14,8 @@ import {
   MdChatBubbleOutline,
   MdWorkOutline, MdReportProblem
 } from "react-icons/md";
+import { BrowserRouter as Link } from "react-router-dom";
+
 
 const Sidebar = () => {
   return (
@@ -23,12 +24,12 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <a href="/" className="link">
+            <Link to="/" className="link">
               <li className="sidebarListItem active">
                 <MdLineStyle className="sidebarIcon" />
                 Home
               </li>
-            </a>
+            </Link>
             <li className="sidebarListItem">
               <MdTimeline className="sidebarIcon" />
               Analytics
@@ -42,18 +43,18 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <a to="/users" className="link">
+            <Link to="/users" className="link">
               <li className="sidebarListItem">
                 <MdPermIdentity className="sidebarIcon" />
                 Users
               </li>
-            </a>
-            <a to="/products" className="link">
+            </Link>
+            <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <MdStorefront className="sidebarIcon" />
                 Products
               </li>
-            </a>
+            </Link>
             <li className="sidebarListItem">
               <MdAttachMoney className="sidebarIcon" />
               Transactions
