@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Navigation Bar */
+
+/* <nav> */
+.navbar {
+  z-index: 99999;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background-color: rgb(240, 240, 255);
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+/* <ul> */
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* <li> */
+.navbar-nav li {
+  width: 55px;
+  display: flex;
+  justify-content: flex-start;
+  color: 555;
+  padding: 5px 5px;
+}
+
+.navbar-nav li:hover{
+    background-color: rgb(251, 251, 255);
+    border-radius: 5px;
+}
